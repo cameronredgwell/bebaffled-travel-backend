@@ -14,6 +14,7 @@ app.use(express.json());
 app.use('/api/test', require('./routes/test'));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/profile', require('./routes/profile'));
+app.use('/api/ping', require('./routes/ping'));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`BeBaffled API running on port ${PORT}`));
